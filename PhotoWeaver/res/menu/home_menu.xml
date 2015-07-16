@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/action_refresh"
+        android:orderInCategory="1"
+        android:showAsAction="always"
+        android:icon="@drawable/ic_action_refresh"
+        android:title="@string/action_refresh" />
+
+    <item
+        android:title="@string/action_camera"
+        android:orderInCategory="2"
+        android:icon="@android:drawable/ic_menu_camera"
+        android:showAsAction="always"
+        android:id="@+id/action_camera" />
+
+    <!-- More -->
+    <item
+        android:id="@+id/action_more"
+        android:orderInCategory="100"
+        android:icon="@drawable/ic_action_overflow"
+        android:showAsAction="always"
+        android:title="@string/action_more">
+        <menu>
+            <item
+                android:id="@+id/action_help"
+                android:orderInCategory="2"
+                android:icon="@drawable/ic_action_help"
+                android:title="@string/action_help"
+                android:showAsAction="ifRoom" />
+
+            <item
+                android:id="@+id/action_about"
+                android:orderInCategory="3"
+                android:icon="@drawable/ic_action_about"
+                android:title="@string/action_about"
+                android:showAsAction="ifRoom" />
+
+            <item
+                android:id="@+id/action_settings"
+                android:orderInCategory="1"
+                android:icon="@drawable/ic_action_settings"
+                android:title="@string/action_settings"
+                android:showAsAction="ifRoom" />
+        </menu>
+    </item>
+</menu>

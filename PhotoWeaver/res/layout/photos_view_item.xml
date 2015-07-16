@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="5dp">
+    
+<RelativeLayout 
+   android:layout_marginBottom="2dp"
+   android:layout_width="160dp"
+   android:layout_height="120dp">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:gravity="center"
+        android:textColor="#ffffff" />
+
+    <ImageView
+        android:id="@+id/fullPhoto"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/title"
+        android:background="#ffffff"
+        android:layout_centerHorizontal="true"
+        android:scaleType="centerCrop" />
+    </RelativeLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_below="@id/fullPhoto"        
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="12dp"
+            android:layout_height="10dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/likeimage"
+            android:id="@+id/photolikeimage" />
+        <TextView
+            android:id="@+id/photolikesCount"
+            android:textColor="#FF124D87"
+            android:textSize="10sp"
+            android:layout_width="wrap_content"
+            android:text="0"
+            android:layout_height="wrap_content"/>
+        <ImageView
+            android:layout_width="12dp"
+            android:layout_height="10dp"
+            android:src="@drawable/commentimage"
+            android:scaleType="centerInside"
+            android:id="@+id/photocommentimage"
+            android:layout_marginLeft="10dp"/>
+        <TextView
+            android:id="@+id/photoCommentsCount"
+            android:textColor="#FF124D87"
+            android:textSize="10sp"
+            android:layout_width="wrap_content"
+            android:text="0"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/provider_selector">
+
+    <ImageView
+        android:id="@+id/providerLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        android:paddingRight="3dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="8dp" />
+
+    <ImageView
+        android:id="@+id/providerLogoText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/providerLogo"
+        android:paddingTop="5dp"
+        android:paddingBottom="8dp" />
+
+    <ImageView
+        android:id="@+id/provider_image1"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_below="@id/providerLogo"
+        android:padding="1dp"
+        android:layout_marginLeft="2dp" />
+
+    <ImageView
+        android:id="@+id/provider_image2"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_toRightOf="@id/provider_image1"
+        android:layout_below="@id/providerLogo"
+        android:padding="1dp"
+        android:layout_marginLeft="2dp" />
+
+    <ImageView
+        android:id="@+id/provider_image3"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_toRightOf="@id/provider_image2"
+        android:layout_below="@id/providerLogo"
+        android:padding="1dp"
+        android:layout_marginLeft="2dp" />
+
+</RelativeLayout>

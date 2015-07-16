@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.wishnuu.photoweaverplus"
+    android:versionCode="3"
+    android:versionName="1.2">
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="18" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.SET_DEBUG_APP"/>
+
+    <uses-feature android:name="android.hardware.camera" />
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.aviary.android.feather.v1.API_KEY"
+            android:value="ivxkq6ohdrpjjk6t" />
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/app_id" />
+
+        <activity
+            android:name="com.wishnuu.photoweaver.MainActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.wishnuu.photoweaver.ViewPagerActivity"
+            android:label="@string/app_name"
+            android:configChanges="orientation"></activity>
+        <activity
+            android:name="com.wishnuu.photoweaver.CanvasPopActivity"
+            android:label="@string/app_name"></activity>
+        <activity
+            android:name="com.wishnuu.photoweaver.flickr.FlickrBrowseActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:parentActivityName="com.wishnuu.photoweaver.MainActivity">
+            <!-- Parent activity meta-data to support API level 7+ -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.wishnuu.photosplus.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.wishnuu.photoweaver.flickr.FlickrSearchActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:parentActivityName="com.wishnuu.photoweaver.flickr.FlickrBrowseActivity">
+            <!-- Parent activity meta-data to support API level 7+ -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.wishnuu.photosplus.flickr.FlickrBrowseActivity" />
+        </activity>
+        <activity
+            android:name="com.wishnuu.photoweaver.activities.AlbumActivity"
+            android:configChanges="keyboardHidden|orientation"></activity>
+        <activity
+            android:name="com.wishnuu.photoweaver.activities.PhotoActivity"
+            android:configChanges="keyboardHidden|orientation"></activity>
+        <activity android:name="com.facebook.LoginActivity" />
+        <activity
+            android:name="com.aviary.android.feather.FeatherActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="unspecified"
+            android:hardwareAccelerated="true"
+            android:largeHeap="true"
+            android:theme="@style/AviaryTheme"></activity>
+
+        <receiver
+            android:name="com.aviary.android.feather.library.receivers.AviarySystemReceiver"
+            android:exported="true"
+            android:process=":aviary_system_receiver">
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+                <action android:name="android.intent.action.PACKAGE_REPLACED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+    </application>
+</manifest>

@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="aviary-tracking">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../Aviary-SDK/libs/aviary-tracking.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

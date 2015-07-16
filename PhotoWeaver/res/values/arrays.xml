@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="flickr_category_names">
+        <item>@drawable/image_travel</item>
+        <item>@drawable/image_beach</item>
+        <item>@drawable/image_home</item>
+        <item>@drawable/image_people</item>
+        <item>@drawable/image_animals</item>
+        <item>@drawable/image_food</item>
+        <item>@drawable/image_landscape</item>
+        <item>@drawable/image_celebrities</item>
+        <item>@drawable/image_movies</item>
+        <!--<item>@drawable/image_Art</item>-->
+        <!--<item>@drawable/image_Cars</item>-->
+        <!--<item>@drawable/image_Random</item>-->
+        <!--<item>@drawable/image_Custom1</item>-->
+        <!--<item>@drawable/image_Custom2</item>-->
+    </string-array>
+
+</resources>

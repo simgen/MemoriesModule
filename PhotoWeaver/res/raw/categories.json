@@ -1,0 +1,54 @@
+{
+    "categories": {
+        "category": [
+            {
+                "id": "1",
+                "name": "Travel",
+                "image": "image_travel",
+                "text": "travel"
+            },
+            {
+                "id": "2",
+                "name": "Home",
+                "image": "image_home",
+                "text": "home"
+            },
+            {
+                "id": "3",
+                "name": "People",
+                "image": "image_people",
+                "text": "people"
+            },
+            {
+                "id": "3",
+                "name": "Animals",
+                "image": "image_animals",
+                "text": "animals"
+            },
+            {
+                "id": "3",
+                "name": "Food",
+                "image": "image_food",
+                "text": "food"
+            },
+            {
+                "id": "3",
+                "name": "Landscape",
+                "image": "image_landscape",
+                "text": "landscape"
+            },
+            {
+                "id": "3",
+                "name": "Celebrities",
+                "image": "image_celebrities",
+                "text": "celebrities"
+            },
+            {
+                "id": "3",
+                "name": "Movies",
+                "image": "image_movies",
+                "text": "movies"
+            }
+        ]
+    }
+}

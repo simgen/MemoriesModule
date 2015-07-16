@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="160dp"
+    android:layout_height="64dp"
+    android:orientation="horizontal"
+    android:background="#FFFFFFFF">
+
+    <ImageView
+        android:id="@+id/providerLogo"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"/>
+
+    <ImageView
+        android:id="@+id/providerLogoText"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"/>
+
+<!--    <ImageView
+    android:id="@+id/provider_image1"
+    android:layout_width="50dp"
+    android:layout_height="50dp"
+    android:layout_below="@id/providerLogo"
+    android:padding="1dp"
+    android:layout_marginLeft="2dp"
+     />
+
+<ImageView
+    android:id="@+id/provider_image2"
+    android:layout_width="50dp"
+    android:layout_height="50dp"
+    android:layout_toRightOf="@id/provider_image1"
+    android:layout_below="@id/providerLogo"
+    android:padding="1dp"
+    android:layout_marginLeft="2dp"
+     />
+
+<ImageView
+    android:id="@+id/provider_image3"
+    android:layout_width="50dp"
+    android:layout_height="50dp"
+    android:layout_toRightOf="@id/provider_image2"
+    android:layout_below="@id/providerLogo"
+    android:padding="1dp"
+    android:layout_marginLeft="2dp"
+    /> -->
+
+</LinearLayout>

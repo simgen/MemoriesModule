@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:title="@string/action_aviary_edit"
+        android:icon="@android:drawable/ic_menu_edit"
+        android:showAsAction="ifRoom"
+        android:id="@+id/action_aviary_edit" />
+    <item
+        android:title="@string/action_post_to_facebook"
+        android:icon="@android:drawable/ic_menu_share"
+        android:showAsAction="ifRoom"
+        android:id="@+id/action_post_to_facebook" />
+    <item
+        android:title="@string/action_show_canvas_pop"
+        android:icon="@android:drawable/ic_menu_gallery"
+        android:showAsAction="ifRoom"
+        android:id="@+id/action_show_canvas_pop" />
+</menu>
